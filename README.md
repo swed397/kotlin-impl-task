@@ -4,13 +4,13 @@ Imp of [task repo](https://github.com/swed397/Task) on Kotlin
 
 # Task
 
-Swagger http://localhost:8080/movie-api/v1/swagger-ui/index.html
+## Swagger http://localhost:8080/movie-api/v1/swagger-ui/index.html
 
-Open-api docs http://localhost:8080/movie-api/v1/v3/api-docs
+## Open-api docs http://localhost:8080/movie-api/v1/v3/api-docs
 
-Console for h2 bd http://localhost:8080/movie-api/v1/h2-console
+## Console for h2 bd http://localhost:8080/movie-api/v1/h2-console
 
-Task:
+# Task:
 
 - Описание: REST Приложения для хранения информации о фильмах
 - Язык: Kotlin или Java
@@ -26,7 +26,7 @@ Task:
         - Дата выхода – date 
       Тип должен быть - Полнометражный, короткометражный или сериал
       
-Обязательные требования:
+## Обязательные требования:
 - Эндпоинты для добавления:
 - Одного фильма
         - Нескольких фильмов
@@ -50,7 +50,7 @@ Task:
  
 - Добавить примеры запросов (желательно .http для Idea(HTTP Client), можно  Curl)
  
-Необязательные требования (желательно):
+## ~~Необязательные требования (желательно~~ обязательно):
 - Тесты
 - Валидация входящих данных
 - Реализация логирования через AOP (например, через аннотации)
