@@ -1,13 +1,11 @@
 package com.example.demo.entities
 
-import jakarta.persistence.Column
-import jakarta.persistence.GeneratedValue
-import jakarta.persistence.GenerationType
-import jakarta.persistence.Id
-import jakarta.persistence.JoinColumn
-import jakarta.persistence.OneToOne
+import jakarta.persistence.*
+import java.time.LocalDate
 import java.util.Date
 
+@Entity
+@Table(name = "movies")
 data class Movie(
 
     @Id
@@ -23,11 +21,11 @@ data class Movie(
 
     @OneToOne
     @JoinColumn(name = "movie_type_id")
-    var movieType: MovieType,
+    var type: MovieType,
 
     @Column(name = "genre")
     var genre: String?,
 
     @Column(name = "date")
-    var date: Date?
+    var date: LocalDate?
 )
