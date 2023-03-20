@@ -1,6 +1,6 @@
 package com.example.demo.dtos.movie
 
-import java.time.LocalDate
+import java.util.*
 
 data class MovieDto(
     val id: Long,
@@ -8,5 +8,5 @@ data class MovieDto(
     val comment: String,
     val type: String,
     val genre: String,
-    val date: LocalDate,
+    val date: Date,
 )

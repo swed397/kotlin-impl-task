@@ -2,7 +2,7 @@ package com.example.demo.dtos.movie
 
 import com.example.demo.valid.ValidateMovieType
 import jakarta.validation.constraints.NotBlank
-import java.time.LocalDate
+import java.util.*
 
 data class MovieCreateDto(
 
@@ -19,5 +19,5 @@ data class MovieCreateDto(
     val genre: String,
 
     @NotBlank(message = "Date is NOT NULL constraint")
-    val date: LocalDate
+    val date: Date
 )

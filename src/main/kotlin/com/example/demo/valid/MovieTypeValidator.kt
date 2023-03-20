@@ -14,7 +14,8 @@ class MovieTypeValidator(
         constraintValidatorContext.disableDefaultConstraintViolation()
         constraintValidatorContext.buildConstraintViolationWithTemplate(
             String.format(
-                "Invalid movie type. Available: %s", movieTypeService.findAll().map { it.name }.joinToString { ";" })
+                "Invalid movie type. Available: %s",
+                movieTypeService.findAll().joinToString("; ") { it.name ?: "" }) + "."
         ).addConstraintViolation()
 
         return movieTypeService.checkMovieTypeExisting(type)
