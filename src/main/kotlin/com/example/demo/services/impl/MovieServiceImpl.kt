@@ -3,7 +3,6 @@ package com.example.demo.services.impl
 import com.example.demo.entities.Movie
 import com.example.demo.repositories.MovieRepository
 import com.example.demo.services.interfaces.MovieService
-import com.example.demo.services.interfaces.MovieTypeService
 import org.slf4j.LoggerFactory
 import org.springframework.data.domain.PageRequest
 import org.springframework.stereotype.Service
@@ -13,7 +12,6 @@ import org.springframework.transaction.annotation.Transactional
 @Transactional(readOnly = true)
 class MovieServiceImpl(
     val repository: MovieRepository,
-    val movieType: MovieTypeService
 ) : MovieService {
     private val logger = LoggerFactory.getLogger(javaClass)
 
